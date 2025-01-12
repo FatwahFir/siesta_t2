@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final ThemeData theme = ThemeData(
@@ -19,22 +18,22 @@ final ThemeData theme = ThemeData(
       borderRadius: BorderRadius.circular(16),
     ),
   ),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     bodySmall: TextStyle(
-      fontSize: 14.sp,
+      fontSize: 14,
       color: grey,
     ),
     bodyMedium: TextStyle(
-      fontSize: 16.sp,
+      fontSize: 16,
       color: grey,
     ),
     titleMedium: TextStyle(
-      fontSize: 17.sp,
+      fontSize: 17,
       color: black,
       fontWeight: FontWeight.bold,
     ),
     titleLarge: TextStyle(
-      fontSize: 20.sp,
+      fontSize: 20,
       color: black,
       fontWeight: FontWeight.bold,
     ),

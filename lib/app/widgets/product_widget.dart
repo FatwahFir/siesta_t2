@@ -70,11 +70,15 @@ class ProductWidget extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Text(
-                                product.category.name,
-                                style: context.bodySmall.copyWith(
-                                    color: context.tertiary,
-                                    fontWeight: FontWeight.w600),
+                              Expanded(
+                                child: Text(
+                                  product.category.name,
+                                  style: context.bodySmall.copyWith(
+                                      color: context.tertiary,
+                                      fontWeight: FontWeight.w600),
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 1,
+                                ),
                               ),
                               SizedBox(
                                 width: 6.w,
